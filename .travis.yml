@@ -25,4 +25,4 @@ deploy:
     keep-history: true
     on:
       repo: system76/web-design
-      tags: true
+      branch: master
