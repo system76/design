@@ -5,10 +5,11 @@
  */
 
 const { resolve } = require('path')
+const { version } = require('./package.json')
 
 module.exports = {
-  title: 'Default Style Guide',
-  version: '1.0.0',
+  title: '@system76/design',
+  version,
   theme: {
     maxWidth: '100%',
     sidebarWidth: 240,
