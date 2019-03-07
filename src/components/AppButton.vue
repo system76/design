@@ -10,27 +10,34 @@
 
 <script>
 import sizeMixin from './sizeMixin'
+
 export default {
   name: 'AppButton',
   mixins: [sizeMixin],
   props: {
     /**
-		 * Sets the button font color
-		 */
+     * Sets the button font color
+     */
     color: {
       type: String,
       default: 'black'
     },
+
     /** Sets background color of the button
-		 * @since 1.2.0
-		 */
+     * @since 1.2.0
+     */
     background: {
       type: String,
       default: 'white'
     },
+
     /** @deprecated Use color instead */
-    oldColor: String
+    oldColor: {
+      type: String,
+      default: ''
+    }
   },
+
   computed: {
     styles () {
       return {
@@ -40,15 +47,16 @@ export default {
       }
     }
   },
+
   methods: {
     /** Triggered when button is clicked
-		 * @event click
-		 * @type {Event}
-		 */
+    * @event click
+    * @type {Event}
+    */
     /** Event for Alligator's example
-		 * @event gator
-		 * @type {Event}
-		 */
+    * @event gator
+    * @type {Event}
+    */
     handleClick (e) {
       this.$emit('click', e)
       this.$emit('gator', e)
@@ -58,29 +66,29 @@ export default {
 </script>
 
 <docs>
-This button is amazing, use it responsibly.
+  This button is amazing, use it responsibly.
 
-## Examples
+  ## Examples
 
-Orange button:
+  Orange button:
 
-```jsx
-<app-button color="orange">Push Me</app-button>
-```
+  ```jsx
+  <app-button color="orange">Push Me</app-button>
+  ```
 
-Ugly button with pink font and blue background:
+  Ugly button with pink font and blue background:
 
-```jsx
-<app-button color="pink" background="blue">
-  Ugly button
-</app-button>
-```
+  ```jsx
+  <app-button color="pink" background="blue">
+    Ugly button
+  </app-button>
+  ```
 
-Button containing custom tags:
+  Button containing custom tags:
 
-```jsx
-<app-button>
-  Text with <b>bold</b>
-</app-button>
-```
+  ```jsx
+  <app-button>
+    Text with <b>bold</b>
+  </app-button>
+  ```
 </docs>
