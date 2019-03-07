@@ -1,0 +1,10 @@
+---
+
+props:
+  color_red:
+    value: rgb(233, 29, 29)
+    category: color_red
+
+global:
+  type: color
+  category: color

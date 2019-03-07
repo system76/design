@@ -1,46 +1,60 @@
 {
-  "name": "web-design",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+  "name": "@system76/design",
+  "version": "0.0.0-development",
+  "description": "System76 styles and design related web assets",
+  "main": "dist/main.common.js",
+  "module": "dist/main.module.js",
+  "style": "dist/main.custom-properties.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/system76/web-design.git"
   },
-  "dependencies": {
-    "vue": "^2.6.6"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@system76/eslint-config-standard": "^1.0.1",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "babel-eslint": "^10.0.1",
+    "commitizen": "^3.0.7",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "semantic-release": "^15.10.8",
+    "theo": "^8.1.2",
+    "vue-cli-plugin-styleguidist": "^3.8.1",
+    "vue-template-compiler": "^2.5.21",
+    "vue": "^2.6.6"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
+  "scripts": {
+    "start": "vue-cli-service styleguidist",
+    "serve": "vue-cli-service styleguidist",
+    "build": "npm run build:theo && npm run build:styleguidist",
+    "build:styleguidist": "vue-cli-service styleguidist:build",
+    "build:theo": "theo ./src/tokens/main.yaml --transform web --format custom-properties.css,scss,sass,module.js,common.js,json --dest ./dist",
+    "lint": "vue-cli-service lint",
+    "commit": "git-cz",
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
+  "engines": {
+    "node": ">=8"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "keywords": [
+    "style",
+    "guide",
+    "frontend",
+    "system76"
+  ],
+  "author": "System76 <hosting@system76.com> (https://system76.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/system76/web-design/issues"
+  },
+  "homepage": "https://github.com/system76/web-design#readme"
 }
