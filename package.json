@@ -32,6 +32,7 @@
     "build:theo": "theo ./src/tokens/main.yaml --transform web --format custom-properties.css,scss,sass,module.js,common.js,json --dest ./dist",
     "lint": "vue-cli-service lint",
     "commit": "git-cz",
+    "prepare": "semantic-release --prepare",
     "release": "semantic-release"
   },
   "publishConfig": {
