@@ -39,32 +39,32 @@ props:
 
   color_blue:
     value: '{!blue}'
-    category: color_blue
+    category: color_brand
 
   color_green:
     value: '{!green}'
-    category: color_green
+    category: color_brand
 
   color_orange:
     value: '{!orange}'
-    category: color_orange
+    category: color_brand
 
   color_purple:
     value: '{!purple}'
-    category: color_purple
+    category: color_brand
 
   color_red:
     value: '{!red}'
-    category: color_red
+    category: color_brand
 
   color_warm_gray:
     value: '{!warm_gray}'
-    category: color_warm_gray
+    category: color_brand
     metadata: 'Pantone warm gray 11'
 
   color_yellow:
     value: '{!yellow}'
-    category: color_yellow
+    category: color_brand
 
   color_suggested:
     value: '{!blue}'
