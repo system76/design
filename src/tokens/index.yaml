@@ -1,0 +1,8 @@
+---
+
+imports:
+  - ./color.yaml
+
+global:
+  type: global
+  category: all

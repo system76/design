@@ -52,11 +52,11 @@ will need to use the full path. If you need another pre-processor file type,
 please open a PR and we would be happy to include it.
 
 ```sass
-@import "@system76/design/dist/main.sass";
+@import "@system76/design/dist/index.sass";
 ```
 
 ```scss
-@import "@system76/design/dist/main.scss";
+@import "@system76/design/dist/index.scss";
 ```
 
 You can also import a JavaScript object of the variables.
@@ -70,7 +70,7 @@ import * as design from '@system76/design'
 ```
 
 And lastly, we have a JSON version you can use at
-`@system76/design/dist/main.json`.
+`@system76/design/dist/index.json`.
 
 ## Development
 

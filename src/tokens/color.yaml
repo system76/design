@@ -1,0 +1,113 @@
+---
+
+aliases:
+  black:
+    value: '#000'
+  blue:
+    value: '#48b9c7'
+  green:
+    value: '#73c48f'
+  orange:
+    value: '#faa41a'
+  purple:
+    value: '#330a24'
+  red:
+    value: '#f15d22'
+  warm_gray:
+    value: '#574f4a'
+  white:
+    value: '#fff'
+  yellow:
+    value: '#ffce51'
+
+props:
+  color_white:
+    value: '{!white}'
+    category: color_grayscale
+  color_light_gray:
+    value: '#f2f2f2'
+    category: color_grayscale
+  color_medium_gray:
+    value: '#a6a6a6'
+    category: color_grayscale
+  color_dark_gray:
+    value: '#404040'
+    category: color_grayscale
+  color_black:
+    value: '{!black}'
+    category: color_grayscale
+
+  color_blue:
+    value: '{!blue}'
+    category: color_blue
+
+  color_green:
+    value: '{!green}'
+    category: color_green
+
+  color_orange:
+    value: '{!orange}'
+    category: color_orange
+
+  color_purple:
+    value: '{!purple}'
+    category: color_purple
+
+  color_red:
+    value: '{!red}'
+    category: color_red
+
+  color_warm_gray:
+    value: '{!warm_gray}'
+    category: color_warm_gray
+    metadata: 'Pantone warm gray 11'
+
+  color_yellow:
+    value: '{!yellow}'
+    category: color_yellow
+
+  color_suggested:
+    value: '{!blue}'
+    category: color_semantic
+  color_suggested_contrast:
+    value: '{!white}'
+    category: color_semantic
+
+  color_destructive:
+    value: '{!red}'
+    category: color_semantic
+  color_destructive_contrast:
+    value: '{!white}'
+    category: color_semantic
+
+  color_error:
+    value: '{!red}'
+    category: color_semantic
+  color_error_contrast:
+    value: '{!white}'
+    category: color_semantic
+
+  color_success:
+    value: '{!green}'
+    category: color_semantic
+  color_success_contrast:
+    value: '{!white}'
+    category: color_semantic
+
+  color_info:
+    value: '{!yellow}'
+    category: color_semantic
+  color_info_contrast:
+    value: '{!warm_gray}'
+    category: color_semantic
+
+  color_warning:
+    value: '{!orange}'
+    category: color_semantic
+  color_warning_contrast:
+    value: '{!warm_gray}'
+    category: color_semantic
+
+global:
+  type: color
+  category: color

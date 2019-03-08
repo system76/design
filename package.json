@@ -2,9 +2,9 @@
   "name": "@system76/design",
   "version": "0.0.0-development",
   "description": "System76 styles and design related web assets",
-  "main": "dist/main.common.js",
-  "module": "dist/main.module.js",
-  "style": "dist/main.custom-properties.css",
+  "main": "dist/index.common.js",
+  "module": "dist/index.module.js",
+  "style": "dist/index.custom-properties.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/system76/web-design.git"
@@ -18,21 +18,22 @@
     "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.8.0",
+    "lodash": "^4.17.11",
     "semantic-release": "^15.10.8",
     "theo": "^8.1.2",
+    "tinycolor2": "^1.4.1",
+    "vue": "^2.6.6",
     "vue-cli-plugin-styleguidist": "^3.8.1",
-    "vue-template-compiler": "^2.5.21",
-    "vue": "^2.6.6"
+    "vue-template-compiler": "^2.5.21"
   },
   "scripts": {
     "start": "vue-cli-service styleguidist",
     "serve": "vue-cli-service styleguidist",
     "build": "npm run build:theo && npm run build:styleguidist",
     "build:styleguidist": "vue-cli-service styleguidist:build",
-    "build:theo": "theo ./src/tokens/main.yaml --transform web --format custom-properties.css,scss,sass,module.js,common.js,json --dest ./dist",
+    "build:theo": "theo ./src/tokens/index.yaml --transform web --format custom-properties.css,scss,sass,module.js,common.js,json,raw.json --dest ./dist",
     "lint": "vue-cli-service lint",
     "commit": "git-cz",
-    "prepare": "semantic-release --prepare",
     "release": "semantic-release"
   },
   "publishConfig": {
