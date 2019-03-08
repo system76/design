@@ -16,10 +16,10 @@ module.exports = {
     head: {
       meta: [{
         name: 'viewport',
-        content: 'width=device-width,initial-scale=1.0',
+        content: 'width=device-width,initial-scale=1.0'
       }, {
         name: 'format-detection',
-        content: 'telephone=no',
+        content: 'telephone=no'
       }]
     }
   },
@@ -38,7 +38,7 @@ module.exports = {
   },
 
   require: [
-    resolve(__dirname, 'src/assets/index.css'),
+    resolve(__dirname, 'src/assets/index.css')
   ],
 
   defaultExample: true,
@@ -59,7 +59,7 @@ module.exports = {
     exampleMode: 'hide',
     usageMode: 'hide',
     components: () => [
-      "./src/components/Colors.vue"
+      './src/components/Colors.vue'
     ]
   }]
 }

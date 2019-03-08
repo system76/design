@@ -13,9 +13,15 @@
       <span class="color__name">{{ friendlyName }}</span>
 
       <ul class="color__values">
-        <li class="color__value">{{ hexValue }}</li>
-        <li class="color__value">{{ rgbValue }}</li>
-        <li class="color__value">{{ cmykValue }}</li>
+        <li class="color__value">
+          {{ hexValue }}
+        </li>
+        <li class="color__value">
+          {{ rgbValue }}
+        </li>
+        <li class="color__value">
+          {{ cmykValue }}
+        </li>
       </ul>
     </div>
   </div>

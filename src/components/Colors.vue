@@ -5,18 +5,21 @@
 
 <template>
   <div>
-    <template v-for="[category, colors] in categories">
+    <div
+      v-for="[category, c] in categories"
+      :key="category"
+    >
       <h3>{{ category }}</h3>
 
       <div class="colors">
         <Color
-          v-for="color in colors"
+          v-for="color in c"
           :key="color.name"
           :name="color.name"
           :value="color.value"
         />
       </div>
-    </template>
+    </div>
   </div>
 </template>
 
