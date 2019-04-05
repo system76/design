@@ -14,8 +14,8 @@
     <img src="https://travis-ci.org/system76/web-design.svg" alt="travis-ci">
   </a>
 
-  <a href="https://greenkeeper.io/">
-    <img src="https://badges.greenkeeper.io/system76/web-design.svg" alt="greenkeeper">
+  <a href="https://renovatebot.com/">
+    <img src="https://img.shields.io/badge/renovate-enabled-brightgreen.svg" alt="renovate">
   </a>
 
   <a href="https://standardjs.com">
