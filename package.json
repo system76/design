@@ -12,7 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "@system76/eslint-config-standard": "^1.0.2",
-    "@vue/cli-plugin-babel": "^3.5.3",
+    "@vue/cli-plugin-babel": "^3.5.5",
     "@vue/cli-plugin-eslint": "^3.5.1",
     "@vue/cli-service": "^3.5.3",
     "commitizen": "^3.0.7",
@@ -23,7 +23,7 @@
     "theo": "^8.1.2",
     "tinycolor2": "^1.4.1",
     "vue": "^2.6.10",
-    "vue-cli-plugin-styleguidist": "^3.11.2",
+    "vue-cli-plugin-styleguidist": "^3.11.4",
     "vue-template-compiler": "^2.6.10"
   },
   "scripts": {
