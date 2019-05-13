@@ -21,56 +21,23 @@
   <a href="https://standardjs.com">
     <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="standard">
   </a>
+
+  <a href="https://system76.github.io/web-design/">
+    <img src="https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg" alt="Storybook">
+  </a>
 </p>
 
 ---
 
-This repository contains all colors, style variables, and documentation related
-to how System76 styles it's web projects. It serves as the single source of
-truth that all other web projects should use.
+This repository contains all colors, style variables, typography and
+documentation related to how System76 styles it's web projects. It serves as the
+single source of truth that all other web projects should use.
 
 ## Using
 
 ```
 npm install --save-dev @system76/design
 ```
-
-### Styles
-
-You can use the CSS variables simply by importing the package.
-
-```css
-@import "@system76/design";
-
-body {
-  background-color: var(--black);
-}
-```
-
-If you are using a pre-processor, you can import the respected file, but you
-will need to use the full path. If you need another pre-processor file type,
-please open a PR and we would be happy to include it.
-
-```sass
-@import "@system76/design/dist/index.sass";
-```
-
-```scss
-@import "@system76/design/dist/index.scss";
-```
-
-You can also import a JavaScript object of the variables.
-
-```js
-const design = require('@system76/design')
-```
-
-```js
-import * as design from '@system76/design'
-```
-
-And lastly, we have a JSON version you can use at
-`@system76/design/dist/index.json`.
 
 ## Development
 

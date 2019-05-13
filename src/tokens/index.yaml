@@ -2,6 +2,7 @@
 
 imports:
   - ./color.yaml
+  - ./font.yaml
 
 global:
   type: global

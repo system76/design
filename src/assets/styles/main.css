@@ -1,0 +1,9 @@
+/**
+ * main.css
+ * Page reset and normalization to System76 standards
+ */
+
+@import "../../tokens/index.custom-properties.css";
+
+@import "./fonts.css";
+@import "./normalize.css";

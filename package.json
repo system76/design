@@ -2,42 +2,43 @@
   "name": "@system76/design",
   "version": "0.0.0-development",
   "description": "System76 styles and design related web assets",
-  "main": "dist/index.common.js",
-  "module": "dist/index.module.js",
-  "style": "dist/index.custom-properties.css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/system76/web-design.git"
+  "author": "System76 <hosting@system76.com> (https://system76.com)",
+  "scripts": {
+    "build": "npm run build:theo && npm run build:library && npm run build:storybook",
+    "lint": "vue-cli-service lint --no-fix",
+    "build:library": "vue-cli-service build --target lib --name web-design src/index.js",
+    "build:storybook": "vue-cli-service storybook:build -c config/storybook -o docs",
+    "build:theo": "theo ./src/tokens/index.yaml --transform web --format custom-properties.css,module.js --dest ./src/tokens",
+    "commit": "git-cz",
+    "lint:fix": "vue-cli-service lint",
+    "release": "semantic-release",
+    "start": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-centered": "^5.0.11",
+    "@storybook/addon-knobs": "^5.0.0",
+    "@storybook/addon-links": "^5.0.0",
+    "@storybook/addon-viewport": "^5.0.11",
     "@system76/eslint-config-standard": "^1.0.2",
-    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/babel-preset-app": "^3.7.0",
     "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
+    "babel-loader": "^8.0.4",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
-    "lodash": "^4.17.11",
     "semantic-release": "^15.13.3",
     "theo": "^8.1.2",
-    "tinycolor2": "^1.4.1",
     "vue": "^2.6.10",
-    "vue-cli-plugin-styleguidist": "^3.13.1",
+    "vue-cli-plugin-storybook": "^0.6.1",
     "vue-template-compiler": "^2.6.10"
   },
-  "scripts": {
-    "start": "vue-cli-service styleguidist",
-    "serve": "vue-cli-service styleguidist",
-    "build": "npm run build:theo && npm run build:styleguidist",
-    "build:styleguidist": "vue-cli-service styleguidist:build",
-    "build:theo": "theo ./src/tokens/index.yaml --transform web --format custom-properties.css,scss,sass,module.js,common.js,json,raw.json --dest ./dist",
-    "lint": "vue-cli-service lint",
-    "commit": "git-cz",
-    "release": "semantic-release"
-  },
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/system76/web-design/issues"
   },
   "config": {
     "commitizen": {
@@ -47,16 +48,26 @@
   "engines": {
     "node": ">=8"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "homepage": "https://system76.github.io/web-design/",
   "keywords": [
     "style",
     "guide",
     "frontend",
     "system76"
   ],
-  "author": "System76 <hosting@system76.com> (https://system76.com)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/system76/web-design/issues"
+  "main": "dist/web-design.common.js",
+  "style": "dist/web-design.css",
+  "sideEffects": true,
+  "publishConfig": {
+    "access": "public"
   },
-  "homepage": "https://system76.github.io/web-design/"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/system76/web-design.git"
+  }
 }

@@ -1,0 +1,46 @@
+---
+
+props:
+  font_family_sans:
+    type: font-family
+    category: font-family
+    value:
+      - Fira Sans
+      - system-ui
+      - -apple-system
+      - Segoe UI
+      - Roboto
+      - Ubuntu
+      - Cantarell
+      - Nato Sans
+      - sans-serif
+      - Apple Color Emoji
+      - Segoe UI Emoji
+      - Segoe UI Symbol
+      - Noto Color Emoji
+
+  font_family_slab:
+    type: font-family
+    category: font-family
+    value:
+      - Roboto Slab
+      - serif
+
+  font_family_mono:
+    type: font-family
+    category: font-family
+    value:
+      - Ubuntu Mono
+      - Ubuntu Monospace
+      - Menlo
+      - Consolas
+      - Roboto Mono
+      - Noto Mono
+      - Oxygen Mono
+      - Liberation Mono
+      - monospace
+
+  line_height:
+    type: line-height
+    category: line-height
+    value: 1.5
