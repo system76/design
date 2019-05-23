@@ -29,6 +29,7 @@ html {
   margin: 0;
   padding: 0;
   tab-size: 4;
+  text-decoration-skip: edges;
   text-size-adjust: 100%;
   word-break: break-word;
 }

@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    :class="$style.header1"
+    :class="$style.paragraph1"
   >
     <slot />
   </component>
@@ -9,37 +9,37 @@
 
 <script>
 export default {
-  name: 'Header1',
+  name: 'Paragraph1',
 
   props: {
     tag: {
       type: String,
-      default: 'h1'
+      default: 'p'
     }
   }
 }
 </script>
 
 <style module>
-  .header1 {
+  .paragraph1 {
     font-family: var(--font-family-sans);
-    font-size: 2rem;
+    font-size: 1rem;
     font-smooth: auto;
-    font-style: italic;
-    font-weight: 200;
-    line-height: calc(var(--line-height) * 0.8333);
+    hyphens: none;
     text-rendering: optimizeLegibility;
+    word-break: keep-all;
+    word-wrap: normal;
   }
 
   @media (min-width: 600px) {
-    .header1 {
-      font-size: 2.25rem;
+    .paragraph1 {
+      font-size: 1.225rem;
     }
   }
 
   @media (min-width: 1280px) {
-    .header1 {
-      font-size: 2.4rem;
+    .paragraph1 {
+      font-size: 1.375rem;
     }
   }
 </style>
