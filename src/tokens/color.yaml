@@ -23,90 +23,93 @@ aliases:
 props:
   color_white:
     value: '{!white}'
-    category: color_grayscale
+    category: grayscale-color
   color_light_gray:
     value: '#f2f2f2'
-    category: color_grayscale
+    category: grayscale-color
   color_medium_gray:
     value: '#a6a6a6'
-    category: color_grayscale
+    category: grayscale-color
   color_dark_gray:
     value: '#404040'
-    category: color_grayscale
+    category: grayscale-color
   color_black:
     value: '{!black}'
-    category: color_grayscale
+    category: grayscale-color
 
   color_blue:
     value: '{!blue}'
-    category: color_brand
+    category: brand-color
 
   color_green:
     value: '{!green}'
-    category: color_brand
+    category: brand-color
 
   color_orange:
     value: '{!orange}'
-    category: color_brand
+    category: brand-color
 
   color_purple:
     value: '{!purple}'
-    category: color_brand
+    category: brand-color
 
   color_red:
     value: '{!red}'
-    category: color_brand
+    category: brand-color
 
   color_warm_gray:
     value: '{!warm_gray}'
-    category: color_brand
+    category: brand-color
     metadata: 'Pantone warm gray 11'
 
   color_yellow:
     value: '{!yellow}'
-    category: color_brand
+    category: brand-color
 
-  color_suggested:
-    value: '{!blue}'
-    category: color_semantic
-  color_suggested_contrast:
-    value: '{!white}'
-    category: color_semantic
-
-  color_destructive:
-    value: '{!red}'
-    category: color_semantic
-  color_destructive_contrast:
-    value: '{!white}'
-    category: color_semantic
-
-  color_error:
-    value: '{!red}'
-    category: color_semantic
-  color_error_contrast:
-    value: '{!white}'
-    category: color_semantic
-
-  color_success:
-    value: '{!green}'
-    category: color_semantic
-  color_success_contrast:
-    value: '{!white}'
-    category: color_semantic
-
-  color_info:
-    value: '{!yellow}'
-    category: color_semantic
-  color_info_contrast:
-    value: '{!warm_gray}'
-    category: color_semantic
-
-  color_warning:
+  color_light_action:
     value: '{!orange}'
-    category: color_semantic
-  color_warning_contrast:
+
+  color_light_suggested:
+    value: '{!blue}'
+    category: text-color
+  color_light_suggested_contrast:
+    value: '{!white}'
+    category: background-color
+
+  color_light_destructive:
+    value: '{!red}'
+    category: text-color
+  color_light_destructive_contrast:
+    value: '{!white}'
+    category: background-color
+
+  color_light_error:
+    value: '{!red}'
+    category: text-color
+  color_light_error_contrast:
+    value: '{!white}'
+    category: background-color
+
+  color_light_success:
+    value: '{!green}'
+    category: text-color
+  color_light_success_contrast:
+    value: '{!white}'
+    category: background-color
+
+  color_light_info:
+    value: '{!yellow}'
+    category: text-color
+  color_light_info_contrast:
     value: '{!warm_gray}'
-    category: color_semantic
+    category: background-color
+
+  color_light_warning:
+    value: '{!orange}'
+    category: text-color
+  color_light_warning_contrast:
+    value: '{!warm_gray}'
+    category: background-color
 
 global:
   type: color
