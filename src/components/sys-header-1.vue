@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Header1',
+  name: 'SysHeader1',
 
   props: {
     tag: {

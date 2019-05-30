@@ -1,0 +1,9 @@
+---
+
+props:
+  box_shadow_light_action:
+    value:
+      - 0 0 8px rgba(250, 164, 26, 0.7)
+      - 0 0 1px rgba(250, 164, 26, 0.7)
+    type: text
+    category: box-shadow

@@ -3,6 +3,7 @@
 imports:
   - ./color.yaml
   - ./font.yaml
+  - ./shadow.yml
 
 global:
   type: global
