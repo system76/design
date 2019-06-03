@@ -39,6 +39,19 @@ single source of truth that all other web projects should use.
 npm install --save-dev @system76/design
 ```
 
+### Tips
+
+1) You will need to ensure that babel `sourceType` is set to `unambiguous`. In
+nuxt, this means adding the following to your configuration:
+
+```
+build: {
+  babel: {
+    sourceType: 'unambiguous'
+  }
+}
+```
+
 ## Development
 
 1) Download the repository
