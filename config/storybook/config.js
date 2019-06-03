@@ -1,8 +1,3 @@
-/**
- * config/storybook/config.js
- * The main configuration settings for storybook
- */
-
 import '../../src/assets/styles/main.css'
 
 import { addDecorator, addParameters, configure } from '@storybook/vue'

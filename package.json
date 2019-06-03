@@ -3,71 +3,92 @@
   "version": "0.0.0-development",
   "description": "System76 styles and design related web assets",
   "author": "System76 <hosting@system76.com> (https://system76.com)",
+  "license": "MIT",
+  "main": "dist/index.common.js",
+  "web": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "jsnext:main": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "source": "src/index.js",
+  "style": "dist/index.esm.css",
   "scripts": {
+    "start": "start-storybook -c config/storybook",
     "build": "npm run build:theo && npm run build:library && npm run build:storybook",
-    "lint": "vue-cli-service lint --no-fix",
-    "build:library": "vue-cli-service build --target lib --name web-design src/index.js",
-    "build:storybook": "vue-cli-service storybook:build -c config/storybook -o docs",
+    "build:library": "NODE_ENV=production rollup -c",
+    "build:storybook": "build-storybook -c config/storybook -o docs",
     "build:theo": "theo ./src/tokens/index.yaml --transform web --format custom-properties.css,module.js --dest ./src/tokens",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "commit": "git-cz",
-    "lint:fix": "vue-cli-service lint",
-    "release": "semantic-release",
-    "start": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "release": "semantic-release"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@storybook/addon-centered": "^5.0.11",
-    "@storybook/addon-knobs": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addon-viewport": "^5.0.11",
-    "@system76/eslint-config-standard": "^1.0.2",
-    "@vue/babel-preset-app": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
-    "babel-loader": "^8.0.6",
-    "commitizen": "^3.1.1",
-    "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.16.0",
-    "semantic-release": "^15.13.12",
-    "theo": "^8.1.2",
-    "vue": "^2.6.10",
-    "vue-cli-plugin-storybook": "^0.6.1",
-    "vue-template-compiler": "^2.6.10"
+  "homepage": "https://system76.github.io/web-design/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/system76/web-design.git"
   },
   "bugs": {
     "url": "https://github.com/system76/web-design/issues"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "engines": {
-    "node": ">=8"
-  },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "homepage": "https://system76.github.io/web-design/",
   "keywords": [
     "style",
     "guide",
     "frontend",
     "system76"
   ],
-  "license": "MIT",
-  "main": "dist/web-design.common.js",
-  "style": "dist/web-design.css",
-  "sideEffects": true,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/system76/web-design.git"
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@storybook/addon-centered": "^5.0.11",
+    "@storybook/addon-knobs": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addon-viewport": "^5.0.11",
+    "@storybook/vue": "^5.0.11",
+    "@system76/standard": "^1.1.2",
+    "@vue/babel-preset-app": "^3.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "commitizen": "^3.1.1",
+    "css-loader": "^2.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-url": "^8.0.0",
+    "rollup": "^1.13.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-copy": "^2.0.1",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "semantic-release": "^15.13.12",
+    "theo": "^8.1.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -66,6 +66,34 @@ props:
     value: '{!yellow}'
     category: brand-color
 
+  color_social_google:
+    value: '#dd4b39'
+    category: social-color
+
+  color_social_twitter:
+    value: '#00b6f1'
+    category: social-color
+
+  color_social_facebook:
+    value: '#3b579d'
+    category: social-color
+
+  color_social_pinterest:
+    value: '#cb2028'
+    category: social-color
+
+  color_social_instagram:
+    value: '#ffb900'
+    category: social-color
+
+  color_social_github:
+    value: '#000'
+    category: social-color
+
+  color_social_ubuntu:
+    value: '#300a24'
+    category: social-color
+
   color_light_action:
     value: '{!orange}'
 

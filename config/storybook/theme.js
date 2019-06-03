@@ -1,8 +1,3 @@
-/**
- * config/storybook/theme.js
- * System76 like theme for storybook
- */
-
 import { create } from '@storybook/theming'
 
 import * as tokens from '../../src/tokens/index.module.js'
