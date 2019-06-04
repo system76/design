@@ -79,7 +79,7 @@
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-vue": "^5.0.0",
     "semantic-release": "^15.13.12",
-    "theo": "^8.1.2",
+    "theo": "^8.1.3",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
