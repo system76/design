@@ -20,7 +20,8 @@ deploy:
     skip_cleanup: true
     github-token: $GH_TOKEN
     local-dir: docs
-    keep-history: true
+    keep-history: false
+    fqdn: design.origin76.com
     on:
       repo: system76/web-design
       branch: master
