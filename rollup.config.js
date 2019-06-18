@@ -84,8 +84,10 @@ export default [{
   plugins: [
     ...DEFAULT_CONFIG.plugins.preVue,
     copy({
-      targets: ['src/assets/fonts'],
-      outputFolder: 'dist'
+      targets: [{
+        src: 'src/assets/fonts',
+        dest: 'dist'
+      }]
     }),
     vue({
       ...DEFAULT_CONFIG.plugins.vue,
