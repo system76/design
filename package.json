@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "description": "System76 styles and design related web assets",
   "author": "System76 <hosting@system76.com> (https://system76.com)",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "main": "dist/index.common.js",
   "web": "dist/index.umd.js",
   "module": "dist/index.esm.js",
