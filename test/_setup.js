@@ -16,6 +16,6 @@ hooks('vue')
 
 // Setup vue and js files to be processed by `require-extension-hooks-babel`
 hooks(['vue', 'js'])
-  .exclude(({filename}) => filename.match(/\/node_modules\//))
+  .exclude(({ filename }) => filename.match(/\/node_modules\//))
   .plugin('babel')
   .push()
