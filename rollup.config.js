@@ -1,13 +1,13 @@
-import { terser } from 'rollup-plugin-terser'
+import postcssImport from 'postcss-import'
+import postcssPresetEnv from 'postcss-preset-env'
+import postcssUrl from 'postcss-url'
 import babel from 'rollup-plugin-babel'
 import commonjs from 'rollup-plugin-commonjs'
 import copy from 'rollup-plugin-copy'
 import css from 'rollup-plugin-css-only'
 import postcss from 'rollup-plugin-postcss'
-import postcssImport from 'postcss-import'
-import postcssPresetEnv from 'postcss-preset-env'
-import postcssUrl from 'postcss-url'
 import replace from 'rollup-plugin-replace'
+import { terser } from 'rollup-plugin-terser'
 import vue from 'rollup-plugin-vue'
 
 const DEFAULT_CONFIG = {

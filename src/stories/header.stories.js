@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue'
 import { text } from '@storybook/addon-knobs'
+import { storiesOf } from '@storybook/vue'
 
 import SysHeader1 from '../components/sys-header-1.vue'
 import SysHeader2 from '../components/sys-header-2.vue'
@@ -7,10 +7,8 @@ import SysHeader3 from '../components/sys-header-3.vue'
 import SysHeader4 from '../components/sys-header-4.vue'
 import SysHeader5 from '../components/sys-header-5.vue'
 import SysHeader6 from '../components/sys-header-6.vue'
-
 import SysParagraph1 from '../components/sys-paragraph-1.vue'
 import SysParagraph2 from '../components/sys-paragraph-2.vue'
-
 import SysSubheader1 from '../components/sys-subheader-1.vue'
 import SysSubheader2 from '../components/sys-subheader-2.vue'
 import SysSubheader3 from '../components/sys-subheader-3.vue'

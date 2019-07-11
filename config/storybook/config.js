@@ -1,8 +1,8 @@
 import '../../src/assets/styles/main.css'
 
-import { addDecorator, addParameters, configure } from '@storybook/vue'
-import { withKnobs } from '@storybook/addon-knobs'
 import centered from '@storybook/addon-centered/vue'
+import { withKnobs } from '@storybook/addon-knobs'
+import { addDecorator, addParameters, configure } from '@storybook/vue'
 
 import { theme } from './theme'
 
