@@ -17,8 +17,8 @@
     "build:library": "NODE_ENV=production rollup -c",
     "build:storybook": "build-storybook -c config/storybook -o docs",
     "build:theo": "theo ./src/tokens/index.yaml --transform web --format custom-properties.css,module.js --dest ./src/tokens",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ignore-path .gitignore .",
+    "lint": "eslint --ext js,vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext js,vue --ignore-path .gitignore .",
     "test": "ava",
     "commit": "git-cz",
     "release": "semantic-release"
