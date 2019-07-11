@@ -10,8 +10,8 @@
     <img src="https://img.shields.io/npm/v/@system76/design.svg" alt="npm">
   </a>
 
-  <a href="https://travis-ci.org/system76/web-design">
-    <img src="https://travis-ci.org/system76/web-design.svg" alt="travis-ci">
+  <a href="https://travis-ci.org/system76/design">
+    <img src="https://travis-ci.org/system76/design.svg" alt="travis-ci">
   </a>
 
   <a href="https://renovatebot.com/">
@@ -22,7 +22,7 @@
     <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="standard">
   </a>
 
-  <a href="https://system76.github.io/web-design/">
+  <a href="https://design.origin76.com/">
     <img src="https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg" alt="Storybook">
   </a>
 </p>
