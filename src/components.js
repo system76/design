@@ -1,5 +1,5 @@
 /**
- * web-design/components.js
+ * src/components.js
  * Exports a bunch of helpful System76 design related components
  */
 

@@ -1,5 +1,5 @@
 /**
- * web-design/test/spec/components/sys-paragraph-2.js
+ * test/spec/components/sys-paragraph-2.js
  * Tests sys-paragraph-2 component
  */
 

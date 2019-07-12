@@ -1,5 +1,5 @@
 /**
- * web-design/entry.js
+ * entry.js
  * Exports everything related to System76 design for browser script entry
  */
 

@@ -1,5 +1,5 @@
 /**
- * web-design/test/_setup.js
+ * test/_setup.js
  * Sets up Ava with the ability to import Vue files
  */
 

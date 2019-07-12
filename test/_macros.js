@@ -1,5 +1,5 @@
 /**
- * web-design/test/_macros.js
+ * test/_macros.js
  * Helpful Ava test macros
  */
 
