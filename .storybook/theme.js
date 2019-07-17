@@ -1,6 +1,6 @@
 import { create } from '@storybook/theming'
 
-import * as tokens from '../../src/tokens/index.module.js'
+import * as tokens from '../src/tokens/index.module.js'
 
 export const theme = create({
   base: 'light',
@@ -12,6 +12,6 @@ export const theme = create({
   appContentBg: tokens.colorWhite,
 
   brandTitle: 'System76',
-  brandUrl: 'https://system76.github.io/web-design',
+  brandUrl: 'https://design.origin76.com',
   brandImage: 'https://system76.com/assets/logo.png'
 })
