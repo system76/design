@@ -1,15 +1,21 @@
-import { Meta } from '@storybook/addon-docs/blocks'
+import { Meta, Story } from '@storybook/addon-docs/blocks'
 
 import SysHeader1 from './sys-header-1.vue'
 
-<Meta title="Typography|Headers" />
+<Meta title="Typography|Headers" component={SysHeader1} />
 
-# Header 1
+<Story name="Header 1">
+  <SysHeader1>Header 1</SysHeader1>
+</Story>
 
-testing things
+<Story name="Header 2">
+  <SysHeader2>Header 2</SysHeader2>
+</Story>
 
-<Story name="header-1">
-  <Preview>
-    <SysHeader1>This is an HTML h1 tag</SysHeader1>
-  </Preview>
+<Story name="Header 3">
+  <SysHeader3>Header 3</SysHeader3>
+</Story>
+
+<Story name="Header 4">
+  <SysHeader4>Header 4</SysHeader4>
 </Story>

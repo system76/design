@@ -12,5 +12,4 @@ addParameters({
   options: { theme }
 })
 
-load(require.context('../src', true, /\.stories\.js$/), module);
-load(require.context('../src', true, /\.stories\.mdx$/), module);
+load(require.context('../src', true, /\.stories\.(js|ts|mdx)$/), module)
