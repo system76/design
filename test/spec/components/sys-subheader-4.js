@@ -1,5 +1,5 @@
 /**
- * web-design/test/spec/components/sys-subheader-4.js
+ * test/spec/components/sys-subheader-4.js
  * Tests sys-subheader-4 component
  */
 

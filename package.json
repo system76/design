@@ -25,13 +25,13 @@
     "commit": "git-cz",
     "release": "semantic-release"
   },
-  "homepage": "https://system76.github.io/web-design/",
+  "homepage": "https://system76.github.io/design/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/system76/web-design.git"
+    "url": "git+https://github.com/system76/design.git"
   },
   "bugs": {
-    "url": "https://github.com/system76/web-design/issues"
+    "url": "https://github.com/system76/design/issues"
   },
   "keywords": [
     "style",
