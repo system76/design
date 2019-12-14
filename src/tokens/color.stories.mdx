@@ -1,17 +1,218 @@
-import { ColorPalette, ColorItem, Story, Meta } from '@storybook/addon-docs/blocks'
+import { ColorPalette, ColorItem, Meta } from '@storybook/addon-docs/blocks'
 
 import * as tokens from './index.module.js'
 
-<Meta title="Styles|Colors" />
+<Meta title="Variables|Colors" />
 
-# Primary Colors
+# Colors
 
-<Story name="primary">
-  <ColorPalette>
-    <ColorItem
-      title="testing"
-      subtitle="more testing"
-      colors={['#fff']}
-    />
-  </ColorPalette>
-</Story>
+TODO: Some copy about color theory and why we use the colors we do.
+
+## Usage
+
+Obviously you can just copy the RGB values from this page into a project, but
+to make it easier, we have included a number of files with all of these
+variables for you. This ensures that the colors you want will always be up to
+date. Everything you need is included in the npm `@system76/design` package.
+Here are some examples of how to use it.
+
+```js
+import { colorWarmGray } from '@system76/design'
+
+console.log(colorWarmGray) // rgb(87, 79, 74)
+```
+
+```css
+@import "@system76/design";
+
+body {
+  background-color: var(--color-warm-gray);
+}
+```
+
+## Primary Colors
+
+These primary colors are used to represent our brand.
+
+<ColorPalette>
+  <ColorItem
+    title="Warm Gray"
+    subtitle="color-warm-gray"
+    colors={[tokens.colorWarmGray]}
+  />
+
+  <ColorItem
+    title="Blue"
+    subtitle="color-blue"
+    colors={[tokens.colorBlue]}
+  />
+
+  <ColorItem
+    title="Green"
+    subtitle="color-green"
+    colors={[tokens.colorGreen]}
+  />
+
+  <ColorItem
+    title="Orange"
+    subtitle="color-orange"
+    colors={[tokens.colorOrange]}
+  />
+
+  <ColorItem
+    title="Purple"
+    subtitle="color-purple"
+    colors={[tokens.colorPurple]}
+  />
+
+  <ColorItem
+    title="Red"
+    subtitle="color-red"
+    colors={[tokens.colorRed]}
+  />
+
+  <ColorItem
+    title="Yellow"
+    subtitle="color-yellow"
+    colors={[tokens.colorYellow]}
+  />
+</ColorPalette>
+
+## Social Colors
+
+These colors are used when we need to reference a third party service. They are
+taken directly from the brand guidelines of those third party services and are
+included here for easy access.
+
+<ColorPalette>
+  <ColorItem
+    title="Google"
+    subtitle="color-social-google"
+    colors={[tokens.colorSocialGoogle]}
+  />
+
+  <ColorItem
+    title="Twitter"
+    subtitle="color-social-twitter"
+    colors={[tokens.colorSocialTwitter]}
+  />
+
+  <ColorItem
+    title="Facebook"
+    subtitle="color-social-facebook"
+    colors={[tokens.colorSocialFacebook]}
+  />
+
+  <ColorItem
+    title="Pinterest"
+    subtitle="color-social-pinterest"
+    colors={[tokens.colorSocialPinterest]}
+  />
+
+  <ColorItem
+    title="Instagram"
+    subtitle="color-social-instagram"
+    colors={[tokens.colorSocialInstagram]}
+  />
+
+  <ColorItem
+    title="Github"
+    subtitle="color-social-github"
+    colors={[tokens.colorSocialGithub]}
+  />
+
+  <ColorItem
+    title="Ubuntu"
+    subtitle="color-social-ubuntu"
+    colors={[tokens.colorSocialUbuntu]}
+  />
+</ColorPalette>
+
+## Gray Scale
+
+This is a general scale of gray colors we use. It is used for general
+guidelines, but we deviate from this if need be.
+
+<ColorPalette>
+  <ColorItem
+    title="White"
+    subtitle="color-white"
+    colors={[tokens.colorWhite]}
+  />
+
+  <ColorItem
+    title="Light Gray"
+    subtitle="color-light-gray"
+    colors={[tokens.colorLightGray]}
+  />
+
+  <ColorItem
+    title="Medium Gray"
+    subtitle="color-medium-gray"
+    colors={[tokens.colorMediumGray]}
+  />
+
+  <ColorItem
+    title="Dark Gray"
+    subtitle="color-dark-gray"
+    colors={[tokens.colorDarkGray]}
+  />
+
+  <ColorItem
+    title="Black"
+    subtitle="color-black"
+    colors={[tokens.colorBlack]}
+  />
+</ColorPalette>
+
+## Light Theme Colors
+
+These are the scenario colors we use for light areas.
+
+<ColorPalette>
+  <ColorItem
+    title="Action"
+    subtitle="color-light-action"
+    colors={[tokens.colorLightAction]}
+  />
+
+  <ColorItem
+    title="Suggested"
+    subtitle="color-light-suggested"
+    colors={[tokens.colorLightSuggested, tokens.colorLightSuggestedContrast]}
+  />
+
+  <ColorItem
+    title="Destructive"
+    subtitle="color-light-destructive"
+    colors={[tokens.colorLightDestructive, tokens.colorLightDestructiveContrast]}
+  />
+
+  <ColorItem
+    title="Error"
+    subtitle="color-light-error"
+    colors={[tokens.colorLightError, tokens.colorLightErrorContrast]}
+  />
+
+  <ColorItem
+    title="Success"
+    subtitle="color-light-success"
+    colors={[tokens.colorLightSuccess, tokens.colorLightSuccessContrast]}
+  />
+
+  <ColorItem
+    title="Info"
+    subtitle="color-light-info"
+    colors={[tokens.colorLightInfo, tokens.colorLightInfoContrast]}
+  />
+
+  <ColorItem
+    title="Warning"
+    subtitle="color-light-warning"
+    colors={[tokens.colorLightWarning, tokens.colorLightWarningContrast]}
+  />
+</ColorPalette>
+
+## Dark Theme Colors
+
+TODO: What should our website look in dark mode?
