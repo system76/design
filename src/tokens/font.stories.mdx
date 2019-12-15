@@ -2,7 +2,7 @@ import { Meta, Preview, Story } from '@storybook/addon-docs/blocks'
 
 import * as tokens from './index.module.js'
 
-<Meta title="Variables|Font" />
+<Meta title="Documentation|Font" />
 
 # Fonts
 
@@ -11,6 +11,35 @@ stack. Each header level has it's own unique styles, so we do not provide CSS
 or JS representation of these styles. We recommend you rely on the Vue
 components provided in this package.
 
-<Preview>
-  <Story id="app--app" height="200px" />
-</Preview>
+## Usage
+
+This library contains Vue components for each type style. Simple drop them in
+and use them like normal components.
+
+```vue
+<template>
+  <sys-header-1>This is a header!</sys-header-1>
+</template>
+
+<script>
+import { SysHeader1 } from '@system76/design'
+
+export default {
+  components: { SysHeader1 }
+}
+</script>
+```
+
+## Examples
+
+<Story id="components-headers--sys-header-1" height="100px" />
+
+<Story id="components-headers--sys-header-2" height="100px" />
+
+<Story id="components-headers--sys-header-3" height="100px" />
+
+<Story id="components-headers--sys-header-4" height="140px" />
+
+<Story id="components-headers--sys-header-5" height="140px" />
+
+<Story id="components-headers--sys-header-6" height="120px" />

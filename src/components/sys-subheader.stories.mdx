@@ -1,0 +1,44 @@
+import { Meta, Props, Story } from '@storybook/addon-docs/blocks'
+
+import SysSubheader1 from './sys-subheader-1'
+import SysSubheader2 from './sys-subheader-2'
+import SysSubheader3 from './sys-subheader-3'
+import SysSubheader4 from './sys-subheader-4'
+
+<Meta title="Components|Subheader" />
+
+<Story name="sys-subheader-1" height="150px">
+  {{
+    components: { SysSubheader1 },
+    template: "<sys-subheader-1>Subheader 1</sys-subheader-1>"
+  }}
+</Story>
+
+<Props of={SysSubheader1} />
+
+<Story name="sys-subheader-2" height="150px">
+  {{
+    components: { SysSubheader2 },
+    template: "<sys-subheader-2>Subheader 2</sys-subheader-2>"
+  }}
+</Story>
+
+<Props of={SysSubheader2} />
+
+<Story name="sys-subheader-3" height="150px">
+  {{
+    components: { SysSubheader3 },
+    template: "<sys-subheader-3>Subheader 3</sys-subheader-3>"
+  }}
+</Story>
+
+<Props of={SysSubheader3} />
+
+<Story name="sys-subheader-4" height="150px">
+  {{
+    components: { SysSubheader4 },
+    template: "<sys-subheader-4>Subheader 4</sys-subheader-4>"
+  }}
+</Story>
+
+<Props of={SysSubheader4} />
