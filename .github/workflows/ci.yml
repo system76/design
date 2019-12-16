@@ -90,7 +90,7 @@ jobs:
 
       - name: Setup Hosting
         run: |
-          touch docs/.nojekyll
+          touch docs/.nojekyll &&
           echo "design.origin76.com" > docs/.CNAME
 
       - name: Deploy
@@ -98,7 +98,7 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_KEY }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./dist
+          PUBLISH_DIR: ./docs
 
   Deploy_Package:
     name: Deploy (NPM Package)
