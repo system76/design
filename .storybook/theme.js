@@ -12,6 +12,6 @@ export const theme = create({
   appContentBg: tokens.colorWhite,
 
   brandTitle: 'System76',
-  brandUrl: 'https://design.origin76.com',
+  brandUrl: '/',
   brandImage: 'https://system76.com/assets/logo.png'
 })

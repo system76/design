@@ -1,24 +1,28 @@
-import { Meta, Props, Story } from '@storybook/addon-docs/blocks'
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
 
 import SysParagraph1 from './sys-paragraph-1'
 import SysParagraph2 from './sys-paragraph-2'
 
-<Meta title="Components|Paragraph" />
+<Meta title="Components|Paragraphs" />
 
-<Story name="sys-paragraph-1" height="150px">
-  {{
-    components: { SysParagraph1 },
-    template: "<sys-paragraph-1>Paragraph 1</sys-paragraph-1>"
-  }}
-</Story>
+<Preview>
+  <Story name="sys-paragraph-1" height="150px">
+    {{
+      components: { SysParagraph1 },
+      template: "<sys-paragraph-1>Paragraph 1</sys-paragraph-1>"
+    }}
+  </Story>
+</Preview>
 
 <Props of={SysParagraph1} />
 
-<Story name="sys-paragraph-2" height="150px">
-  {{
-    components: { SysParagraph2 },
-    template: "<sys-paragraph-2>Paragraph 2</sys-paragraph-2>"
-  }}
-</Story>
+<Preview>
+  <Story name="sys-paragraph-2" height="150px">
+    {{
+      components: { SysParagraph2 },
+      template: "<sys-paragraph-2>Paragraph 2</sys-paragraph-2>"
+    }}
+  </Story>
+</Preview>
 
 <Props of={SysParagraph2} />
