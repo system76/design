@@ -1,0 +1,55 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks'
+
+import * as tokens from './index.module.js'
+
+<Meta title="Documentation|Font" />
+
+# Fonts
+
+We use a combination of Fira Sans, Roboto Slab, and Ubuntu Mono for our font
+stack. Each header level has it's own unique styles, so we do not provide CSS
+or JS representation of these styles. We recommend you rely on the Vue
+components provided in this package.
+
+## Usage
+
+This library contains Vue components for each type style. Simple drop them in
+and use them like normal components. For more information on the props and slots
+each provide, you can look under the "Components" section of the sidebar.
+
+```vue
+<template>
+  <sys-header-1>This is header 1!</sys-header-1>
+</template>
+
+<script>
+import { SysHeader1 } from '@system76/design'
+
+export default {
+  components: { SysHeader1 }
+}
+</script>
+```
+
+## Examples
+
+<Preview>
+  <Story id="components-headers--sys-header-1" height="140px" />
+  <Story id="components-headers--sys-header-2" height="140px" />
+  <Story id="components-headers--sys-header-3" height="140px" />
+  <Story id="components-headers--sys-header-4" height="140px" />
+  <Story id="components-headers--sys-header-5" height="140px" />
+  <Story id="components-headers--sys-header-6" height="140px" />
+</Preview>
+
+<Preview>
+  <Story id="components-subheaders--sys-subheader-1" height="100px" />
+  <Story id="components-subheaders--sys-subheader-2" height="100px" />
+  <Story id="components-subheaders--sys-subheader-3" height="100px" />
+  <Story id="components-subheaders--sys-subheader-4" height="140px" />
+</Preview>
+
+<Preview>
+  <Story id="components-paragraphs--sys-paragraph-1" height="100px" />
+  <Story id="components-paragraphs--sys-paragraph-2" height="100px" />
+</Preview>

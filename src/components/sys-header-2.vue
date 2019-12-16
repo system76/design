@@ -3,6 +3,7 @@
     :is="tag"
     :class="$style.header2"
   >
+    <!-- @slot The Inner HTML -->
     <slot />
   </component>
 </template>
@@ -12,6 +13,9 @@ export default {
   name: 'Header2',
 
   props: {
+    /**
+     * An HTML tag used for this header.
+     */
     tag: {
       type: String,
       default: 'h2'

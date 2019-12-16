@@ -3,6 +3,7 @@
     :is="tag"
     :class="$style.paragraph1"
   >
+    <!-- @slot The Inner HTML -->
     <slot />
   </component>
 </template>
@@ -12,6 +13,9 @@ export default {
   name: 'Paragraph1',
 
   props: {
+    /**
+     * An HTML tag used for this header.
+     */
     tag: {
       type: String,
       default: 'p'

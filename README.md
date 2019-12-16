@@ -58,9 +58,11 @@ build: {
 
 2) Run `npm ci`
 
-3) Run `npm start`
+3) Run `npm run build`
 
-4) Start hacking
+4) Run `npm start`
+
+5) Start hacking
 
 ## Deployment
 

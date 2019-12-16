@@ -1,5 +1,5 @@
 /**
- * web-design/test/_browser.js
+ * test/_browser.js
  * Sets up Ava as a browser environment
  */
 

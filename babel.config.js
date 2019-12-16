@@ -4,10 +4,14 @@ module.exports = (api) => {
   return {
     env: {
       es: {
-        plugins: [['@babel/plugin-transform-modules-commonjs', { loose: true }]]
+        plugins: [
+          ['@babel/plugin-transform-modules-commonjs', { loose: true }]
+        ]
       },
       esm: {
-        presets: [['@babel/env', { modules: false }]]
+        presets: [
+          ['@babel/env', { modules: false }]
+        ]
       }
     }
   }

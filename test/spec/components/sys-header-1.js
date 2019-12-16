@@ -1,5 +1,5 @@
 /**
- * web-design/test/spec/components/sys-header-1.js
+ * test/spec/components/sys-header-1.js
  * Tests sys-header-1 component
  */
 

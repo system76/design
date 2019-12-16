@@ -3,6 +3,7 @@
     :is="tag"
     :class="$style.subheader1"
   >
+    <!-- @slot The Inner HTML -->
     <slot />
   </component>
 </template>
@@ -12,6 +13,9 @@ export default {
   name: 'Subheader1',
 
   props: {
+    /**
+     * An HTML tag used for this header.
+     */
     tag: {
       type: String,
       default: 'h1'
