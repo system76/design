@@ -4,6 +4,7 @@ import SysSubheader1 from './sys-subheader-1'
 import SysSubheader2 from './sys-subheader-2'
 import SysSubheader3 from './sys-subheader-3'
 import SysSubheader4 from './sys-subheader-4'
+import SysSubheader5 from './sys-subheader-5'
 
 <Meta title="Components|Subheaders" />
 
@@ -50,3 +51,14 @@ import SysSubheader4 from './sys-subheader-4'
 </Preview>
 
 <Props of={SysSubheader4} />
+
+<Preview>
+  <Story name="sys-subheader-5" height="150px">
+    {{
+      components: { SysSubheader5 },
+      template: "<sys-subheader-5>Subheader 5</sys-subheader-5>"
+    }}
+  </Story>
+</Preview>
+
+<Props of={SysSubheader5} />
