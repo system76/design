@@ -91,7 +91,7 @@ jobs:
       - name: Setup Hosting
         run: |
           touch docs/.nojekyll &&
-          echo "design.origin76.com" > docs/.CNAME
+          echo "design.origin76.com" > docs/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2
