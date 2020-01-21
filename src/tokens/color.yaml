@@ -25,7 +25,7 @@ props:
     value: '{!white}'
     category: grayscale-color
   color_light_gray:
-    value: '#f2f2f2'
+    value: '#f6f6f6'
     category: grayscale-color
   color_medium_gray:
     value: '#a6a6a6'
@@ -94,50 +94,33 @@ props:
     value: '#300a24'
     category: social-color
 
-  color_light_action:
-    value: '{!orange}'
-
-  color_light_suggested:
-    value: '{!blue}'
-    category: text-color
-  color_light_suggested_contrast:
-    value: '{!white}'
+  color_light_normal:
+    value: '#f6f6f6'
     category: background-color
-
-  color_light_destructive:
-    value: '{!red}'
+  color_light_normal_contrast:
+    value: '{!warm_gray}'
     category: text-color
-  color_light_destructive_contrast:
-    value: '{!white}'
-    category: background-color
 
-  color_light_error:
-    value: '{!red}'
-    category: text-color
-  color_light_error_contrast:
-    value: '{!white}'
+  color_light_primary:
+    value: '#ffa300'
     category: background-color
+  color_light_primary_contrast:
+    value: '#000000'
+    category: text-color
 
-  color_light_success:
-    value: '{!green}'
-    category: text-color
-  color_light_success_contrast:
-    value: '{!white}'
+  color_light_secondary:
+    value: '#6acad8'
     category: background-color
+  color_light_secondary_contrast:
+    value: '#000000'
+    category: text-color
 
   color_light_info:
-    value: '{!yellow}'
-    category: text-color
+    value: '#f9d87a'
+    category: background-color
   color_light_info_contrast:
     value: '{!warm_gray}'
-    category: background-color
-
-  color_light_warning:
-    value: '{!orange}'
     category: text-color
-  color_light_warning_contrast:
-    value: '{!warm_gray}'
-    category: background-color
 
 global:
   type: color
