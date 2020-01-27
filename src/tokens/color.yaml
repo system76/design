@@ -94,34 +94,6 @@ props:
     value: '#300a24'
     category: social-color
 
-  color_light_normal:
-    value: '#f6f6f6'
-    category: background-color
-  color_light_normal_contrast:
-    value: '{!warm_gray}'
-    category: text-color
-
-  color_light_primary:
-    value: '#ffa300'
-    category: background-color
-  color_light_primary_contrast:
-    value: '#000000'
-    category: text-color
-
-  color_light_secondary:
-    value: '#6acad8'
-    category: background-color
-  color_light_secondary_contrast:
-    value: '#000000'
-    category: text-color
-
-  color_light_info:
-    value: '#f9d87a'
-    category: background-color
-  color_light_info_contrast:
-    value: '{!warm_gray}'
-    category: text-color
-
 global:
   type: color
   category: color
