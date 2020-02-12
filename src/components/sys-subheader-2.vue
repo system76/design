@@ -27,7 +27,7 @@ export default {
 <style module>
   .subheader2 {
     font-family: var(--font-family-slab);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-smooth: auto;
     font-weight: 500;
     line-height: calc(var(--line-height) * 0.8333);
