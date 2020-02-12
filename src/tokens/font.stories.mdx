@@ -1,5 +1,6 @@
 import { Meta, Preview, Story } from '@storybook/addon-docs/blocks'
 
+import * as components from '../components'
 import * as tokens from './index.module.js'
 
 <Meta title="Documentation|Font" />
@@ -33,24 +34,35 @@ export default {
 
 ## Examples
 
-<Preview>
-  <Story id="components-headers--sys-header-1" height="140px" />
-  <Story id="components-headers--sys-header-2" height="140px" />
-  <Story id="components-headers--sys-header-3" height="140px" />
-  <Story id="components-headers--sys-header-4" height="140px" />
-  <Story id="components-headers--sys-header-5" height="140px" />
-  <Story id="components-headers--sys-header-6" height="140px" />
-</Preview>
+You can [open the font examples in another tab](/iframe.html?id=documentation-font--font-examples)
+to get a better idea of breakpoints and how they change size depending on the
+viewport.
 
-<Preview>
-  <Story id="components-subheaders--sys-subheader-1" height="100px" />
-  <Story id="components-subheaders--sys-subheader-2" height="100px" />
-  <Story id="components-subheaders--sys-subheader-3" height="100px" />
-  <Story id="components-subheaders--sys-subheader-4" height="140px" />
-  <Story id="components-subheaders--sys-subheader-5" height="140px" />
-</Preview>
-
-<Preview>
-  <Story id="components-paragraphs--sys-paragraph-1" height="100px" />
-  <Story id="components-paragraphs--sys-paragraph-2" height="100px" />
-</Preview>
+<Story name="font-examples">
+  {{
+    components: components,
+    template: `
+      <div style="display:flex;flex-wrap:wrap;">
+        <div style="margin:2rem;">
+          <sys-header-1>Header 1</sys-header-1>
+          <sys-header-2>Header 2</sys-header-2>
+          <sys-header-3>Header 3</sys-header-3>
+          <sys-header-4>Header 4</sys-header-4>
+          <sys-header-5>Header 5</sys-header-5>
+          <sys-header-6>Header 6</sys-header-6>
+        </div>
+        <div style="margin:2rem;">
+          <sys-subheader-1>Subheader 1</sys-subheader-1>
+          <sys-subheader-2>Subheader 2</sys-subheader-2>
+          <sys-subheader-3>Subheader 3</sys-subheader-3>
+          <sys-subheader-4>Subheader 4</sys-subheader-4>
+          <sys-subheader-5>Subheader 5</sys-subheader-5>
+        </div>
+        <div style="margin:2rem;">
+          <sys-paragraph-1>Paragraph 1</sys-paragraph-1>
+          <sys-paragraph-2>Paragraph 2</sys-paragraph-2>
+        </div>
+      </div>
+    `
+  }}
+</Story>
