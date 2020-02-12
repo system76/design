@@ -27,7 +27,7 @@ export default {
 <style module>
   .paragraph2 {
     font-family: var(--font-family-sans);
-    font-size: 1.22rem;
+    font-size: 1.3rem;
     font-smooth: auto;
     hyphens: none;
     text-rendering: optimizeLegibility;
@@ -37,13 +37,13 @@ export default {
 
   @media (min-width: 600px) {
     .paragraph2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
 
   @media (min-width: 1280px) {
     .paragraph2 {
-      font-size: 1.67rem;
+      font-size: 1.5rem;
     }
   }
 </style>

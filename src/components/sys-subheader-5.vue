@@ -27,23 +27,23 @@ export default {
 <style module>
   .subheader5 {
     font-family: var(--font-family-sans);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-smooth: auto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: calc(var(--line-height) * 0.8333);
     text-rendering: optimizeLegibility;
   }
 
   @media (min-width: 600px) {
     .subheader5 {
-      font-size: 1.375rem;
+      font-size: 1.6rem;
     }
   }
 
   @media (min-width: 1280px) {
     .subheader5 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 </style>
