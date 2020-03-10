@@ -1,0 +1,28 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks'
+
+import SysLogo from './sys-logo'
+import SysLogoType from './sys-logo-type'
+
+<Meta title="Components|Logos" />
+
+<Preview>
+  <Story name="sys-logo" height="300px">
+    {{
+      components: { SysLogo },
+      template: "<sys-logo />"
+    }}
+  </Story>
+</Preview>
+
+<Props of={SysLogo} />
+
+<Preview>
+  <Story name="sys-logo-type" height="200px">
+    {{
+      components: { SysLogoType },
+      template: "<sys-logo-type />"
+    }}
+  </Story>
+</Preview>
+
+<Props of={SysLogoType} />
