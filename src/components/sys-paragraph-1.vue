@@ -9,19 +9,19 @@
 </template>
 
 <script>
-export default {
-  name: 'Paragraph1',
+  export default {
+    name: 'Paragraph1',
 
-  props: {
-    /**
-     * An HTML tag used for this header.
-     */
-    tag: {
-      type: String,
-      default: 'p'
+    props: {
+      /**
+       * An HTML tag used for this header.
+       */
+      tag: {
+        type: String,
+        default: 'p'
+      }
     }
   }
-}
 </script>
 
 <style module>

@@ -22,27 +22,27 @@
 </template>
 
 <script>
-export default {
-  name: 'SysLogoType',
+  export default {
+    name: 'SysLogoType',
 
-  props: {
-    /**
-     * A CSS class to apply to the accent underline of the "6".
-     */
-    accentClass: {
-      type: String,
-      default: null
-    },
+    props: {
+      /**
+       * A CSS class to apply to the accent underline of the "6".
+       */
+      accentClass: {
+        type: String,
+        default: null
+      },
 
-    /**
-     * A CSS class to apply to the foreground "system76" text.
-     */
-    foregroundClass: {
-      type: String,
-      default: null
+      /**
+       * A CSS class to apply to the foreground "system76" text.
+       */
+      foregroundClass: {
+        type: String,
+        default: null
+      }
     }
   }
-}
 </script>
 
 <style module>
