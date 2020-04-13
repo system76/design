@@ -9,19 +9,19 @@
 </template>
 
 <script>
-export default {
-  name: 'Subheader3',
+  export default {
+    name: 'Subheader3',
 
-  props: {
-    /**
-     * An HTML tag used for this header.
-     */
-    tag: {
-      type: String,
-      default: 'h3'
+    props: {
+      /**
+       * An HTML tag used for this header.
+       */
+      tag: {
+        type: String,
+        default: 'h3'
+      }
     }
   }
-}
 </script>
 
 <style module>

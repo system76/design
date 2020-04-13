@@ -27,35 +27,35 @@
 </template>
 
 <script>
-export default {
-  name: 'SysLogo',
+  export default {
+    name: 'SysLogo',
 
-  props: {
-    /**
-     * A CSS class to apply to the accent underline of the "6".
-     */
-    accentClass: {
-      type: String,
-      default: null
-    },
+    props: {
+      /**
+       * A CSS class to apply to the accent underline of the "6".
+       */
+      accentClass: {
+        type: String,
+        default: null
+      },
 
-    /**
-     * A CSS class to apply to the circle background
-     */
-    backgroundClass: {
-      type: String,
-      default: null
-    },
+      /**
+       * A CSS class to apply to the circle background
+       */
+      backgroundClass: {
+        type: String,
+        default: null
+      },
 
-    /**
-     * A CSS class to apply to the foreground "7" and "6".
-     */
-    foregroundClass: {
-      type: String,
-      default: null
+      /**
+       * A CSS class to apply to the foreground "7" and "6".
+       */
+      foregroundClass: {
+        type: String,
+        default: null
+      }
     }
   }
-}
 </script>
 
 <style module>
