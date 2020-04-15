@@ -18,3 +18,6 @@ export { default as SysSubheader2 } from './components/sys-subheader-2.vue'
 export { default as SysSubheader3 } from './components/sys-subheader-3.vue'
 export { default as SysSubheader4 } from './components/sys-subheader-4.vue'
 export { default as SysSubheader5 } from './components/sys-subheader-5.vue'
+
+export { default as SysLogoType } from './components/sys-logo-type.vue'
+export { default as SysLogo } from './components/sys-logo.vue'
