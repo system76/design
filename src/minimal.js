@@ -1,9 +1,10 @@
 /**
- * index.js
- * Exports everything related to System76 design
+ * minimal.js
+ * Exports a minimal copy of System76 design tokens. Useful if we are using a
+ * different CSS library, like tailwind.
  */
 
-import './assets/styles/main.css'
+import './assets/styles/minimal.css'
 
 import * as components from './components'
 

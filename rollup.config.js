@@ -126,4 +126,37 @@ export default [{
       }
     })
   ]
+}, {
+  ...DEFAULT_CONFIG,
+  input: 'src/minimal.js',
+  output: {
+    compact: true,
+    exports: 'named',
+    file: 'dist/minimal.common.js',
+    format: 'cjs',
+    name: 'SysDesign',
+    sourcemap: true
+  },
+  plugins: [
+    ...DEFAULT_CONFIG.plugins.preVue,
+    copy({
+      targets: [{
+        src: 'src/assets/fonts',
+        dest: 'dist'
+      }]
+    }),
+    vue({
+      ...DEFAULT_CONFIG.plugins.vue,
+      template: {
+        ...DEFAULT_CONFIG.plugins.vue.template,
+        optimizeSSR: true
+      }
+    }),
+    ...DEFAULT_CONFIG.plugins.postVue,
+    terser({
+      output: {
+        ecma: 5
+      }
+    })
+  ]
 }]

@@ -1,0 +1,8 @@
+/**
+ * minimal.css
+ * System76 design tokens and fonts.
+ */
+
+@import "../../tokens/index.custom-properties.css";
+
+@import "./fonts.css";
