@@ -10,32 +10,34 @@ import replace from 'rollup-plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 import vue from 'rollup-plugin-vue'
 
+const preVuePlugins = () => ([
+  replace({
+    ENVIRONMENT: JSON.stringify('production')
+  }),
+  commonjs({
+    include: 'node_modules/**'
+  }),
+  postcss({
+    extensions: ['.css'],
+    extract: true,
+    minimize: true,
+    plugins: [
+      postcssImport(),
+      postcssUrl({
+        filter: '**/fonts/**',
+        url: (asset) => asset.url.replace('../fonts/', 'fonts/')
+      }),
+      postcssPresetEnv()
+    ]
+  }),
+  css()
+])
+
 const DEFAULT_CONFIG = {
   input: 'src/entry.js',
   external: ['vee-validate', 'vue'],
   plugins: {
-    preVue: [
-      replace({
-        ENVIRONMENT: JSON.stringify('production')
-      }),
-      commonjs({
-        include: 'node_modules/**'
-      }),
-      postcss({
-        extensions: ['.css'],
-        extract: true,
-        minimize: true,
-        plugins: [
-          postcssImport(),
-          postcssUrl({
-            filter: '**/fonts/**',
-            url: (asset) => asset.url.replace('../fonts/', 'fonts/')
-          }),
-          postcssPresetEnv()
-        ]
-      }),
-      css()
-    ],
+    preVue: preVuePlugins(),
     vue: {
       compileTemplate: true,
       style: {
@@ -138,7 +140,7 @@ export default [{
     sourcemap: true
   },
   plugins: [
-    ...DEFAULT_CONFIG.plugins.preVue,
+    ...preVuePlugins(),
     copy({
       targets: [{
         src: 'src/assets/fonts',
