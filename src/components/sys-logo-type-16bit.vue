@@ -6,9 +6,9 @@
 </template>
 
 <script>
-export default {
-  name: 'SysLogoType16bit'
-}
+  export default {
+    name: 'SysLogoType16bit'
+  }
 </script>
 
 <style module>
